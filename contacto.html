@@ -50,9 +50,43 @@
     <form class="formulario" action="">
         <label for="">
             <div class="campo">
-                <label for="">Nombre</label>
-                <input type=" " placeholder="Tu Nombre">
+                <label class="campo__label" for="nombre">Nombre</label>
+                
+                <input 
+                class="campo__field"
+                type="text" 
+                placeholder="Tu Nombre" 
+                id="nombre">
             </div>
+
+            <div class="campo">
+                <label class="campo__label" for="correo">Correo</label>
+                <input 
+                 class="campo__field"
+                 type="email" 
+                 placeholder="Tu Correo" 
+                 id="correo">
+            </div>
+
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea 
+                    class="campo__field campo__field--textarea"
+                    name="" 
+                    id="mensaje" 
+                    cols="30" 
+                    rows="10"
+                ></textarea>
+                
+            </div>
+
+            <div class="campo">
+                <input type="submit" 
+                        value="Enviar" 
+                        class="boton boton--primario">
+            </div>  
+
+            
 
         </label>
 
