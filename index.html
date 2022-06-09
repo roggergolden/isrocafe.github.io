@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isro Café</title>
-    <link rel="stylesheet" href="css/style.css">
+
+   <!--Prefetch--> 
+    <link rel="prefetch" href="nosotros.html" as="document">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!--Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400&display=swap" crossorigin="crossorigin" as="font" >
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="img/blog1.jpg" as="image">
+
+    
 
 </head>
 <body>
@@ -47,39 +58,49 @@
             <h3>Nuestro Blog</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source  loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img src="img/blog1.jpg" alt="imagen blog" loading="lazy">
+                    </picture>
+                    
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tipos de granos de cafe</h4>
                     <p>Lorem ipsum dolor  repellat sint Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem officia modi unde eaque repellendus impedit, eligendi culpa optio maiores assumenda numquam nobis nisi. Amet ab dicta quod omnis libero quae. commodi labore, sit iure vel nobis tenetur repudiandae molestiae?</p>
                 </div>
-                <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                <a href="cursos.html" class="boton boton--primario">Leer Entrada</a>
 
 
             </article>
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img src="img/blog2.jpg" alt="imagen blog" loading="lazy">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tres Deliciosas Recetas de café</h4>
                     <p>Lorem ipsum dolor  repellat sint commodi labore, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iusto quidem nostrum asperiores, animi architecto mollitia obcaecati tempore? Iste debitis minima dolores cumque accusamus modi explicabo cupiditate aut commodi possimus! sit iure vel nobis tenetur repudiandae molestiae?</p>
                 </div>
-                <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                <a href="cursos.html" class="boton boton--primario">Leer Entrada</a>
 
 
             </article>
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img src="img/blog3.jpg" alt="imagen blog" loading="lazy">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Beneficios del Café</h4>
                     <p>Lorem ipsum dolor  repellat sint  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo corporis earum, adipisci vel odio facilis. Autem saepe doloribus quisquam ducimus ipsum quidem maxime corrupti atque enim doloremque, est odit voluptate? commodi labore, sit iure vel nobis tenetur repudiandae molestiae?</p>
                 </div>
-                <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                <a href="blog.html" class="boton boton--primario">Leer Entrada</a>
 
 
             </article>
@@ -98,7 +119,7 @@
                     <p class="widget-curso__label">Cupo:
                         <span class="widget-curso__info">20</span>
                     </p>
-                    <a href="entrada.html" class="boton boton--secundario">Más Información</a>
+                    <a href="cursos.html" class="boton boton--secundario">Más Información</a>
                 </li>
 
                 <li class="widget-curso">
@@ -110,7 +131,7 @@
                     <p class="widget-curso__label">Cupo:
                         <span class="widget-curso__info">20</span>
                     </p>
-                    <a href="entrada.html" class="boton boton--secundario">Más Información</a>
+                    <a href="cursos.html" class="boton boton--secundario">Más Información</a>
                 </li>
                 
             </ul>
@@ -140,6 +161,8 @@
         </div>
 
     </footer>
+
+    <script src="js/modernizer.js"></script>
     
 </body>
 </html>
